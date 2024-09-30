@@ -12,14 +12,14 @@ export default function Home() {
         <div>
             <Container>
                 <Header />
-                <main className="px-[6rem] py-10">
-                    <div className="py-[6rem]">
+                <main className="px-[6rem] mb-10">
+                    <div className="py-[6rem] mb-8">
                         <Hero/>
                     </div>
                     <div className="flex flex-wrap items-center justify-between">
                         {count(6).map((n) => <Card key={n}/>)}
                     </div>
-                    <div className="pb-[3rem] pt-[1rem]">
+                    <div className="pb-[3rem] pt-[3rem]">
                         <Pagination/>
                     </div>
                 </main>
