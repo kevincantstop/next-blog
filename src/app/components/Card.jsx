@@ -9,7 +9,7 @@ const Card = () => {
                 <Image src={`/images/sample-${rand(1, 3)}.jpg`} width="510" height="270" alt="Sample image" className="rounded hover:drop-shadow-xl transition-shadow"/>
             </a>
             <div className="mb-5">
-                <a href="#" className="inline-block px-3 text-gray-100 py-1 rounded bg-sky-950 text-[0.8rem] font-bold hover:bg-sky-900">Travel</a>
+                <a href="#" className={`inline-block px-3 text-gray-100 py-1 rounded bg-sky-950 text-[0.8rem] font-bold hover:bg-sky-900`}>Travel</a>
             </div>
             <h3 className="text-[1.4rem] font-[family-name:var(--font-mermaid1001)] leading-[24px] hover:underline underline-offset-3 mb-1">
                 <a href="#">What Traveling Greece For 2 Weeks Taught Me About Life</a>
