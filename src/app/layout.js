@@ -11,6 +11,16 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+const brodies = localFont({
+  src: "./fonts/brodies.ttf",
+  variable: "--font-brodies",
+  weight: "100 900",
+});
+const mermaid1001 = localFont({
+  src: "./fonts/Mermaid1001.ttf",
+  variable: "--font-mermaid1001",
+  weight: "100 900",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,9 +30,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`bg-[#E5E5E5] ${geistSans.variable} ${geistMono.variable} ${brodies.variable} ${mermaid1001.variable} antialiased`}>
         {children}
       </body>
     </html>
