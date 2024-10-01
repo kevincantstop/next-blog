@@ -1,7 +1,7 @@
 const Header = () => {
     return (
         <header className="px-[6rem] pt-10 flex items-center justify-between">
-            <h1 className="font-bold text-[1.65rem] font-[family-name:var(--font-merriweather)]">
+            <h1 className="font-semibold text-[1.65rem] font-[family-name:var(--font-merriweather-bold)]">
                 <a href="/" className="text-[#000638]">Food Ninja</a>
             </h1>
             <ul className="flex gap-5 text-gray-500 text-[0.95rem]">

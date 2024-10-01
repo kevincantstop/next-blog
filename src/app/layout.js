@@ -11,6 +11,11 @@ const merriweather = localFont({
   variable: "--font-merriweather",
   weight: "100 900",
 });
+const merriweatherBold = localFont({
+  src: "./fonts/Merriweather-Bold.ttf",
+  variable: "--font-merriweather-bold",
+  weight: "100 900",
+});
 
 export const metadata = {
   title: "Create Next App",
@@ -20,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-[#E5E5E5] ${geistSans.variable} ${merriweather.variable} antialiased`}>
+      <body className={`bg-[#E5E5E5] ${geistSans.variable} ${merriweather.variable} ${merriweatherBold.variable} antialiased`}>
         {children}
       </body>
     </html>

@@ -9,7 +9,7 @@ const Subscribe = () => {
             </p>
             <section className="flex flex-col items-start gap-5">
                 <input type="text" className="w-full p-2 rounded" placeholder="Email" />
-                <button className="bg-[#000638] text-gray-100 py-2 px-4 rounded hover:bg-[#040A45]">Sign Up</button>
+                <button className="bg-[#000638] text-gray-100 py-2 px-4 rounded hover:bg-[#040A45] hover:text-white">Sign Up</button>
             </section>
         </div>
     )

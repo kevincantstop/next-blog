@@ -1,7 +1,7 @@
 const Hero = () => {
     return (
         <section className="text-center">
-            <h2 className="font-bold text-[3rem] pb-1 text-[#000638] font-[family-name:var(--font-merriweather)]">
+            <h2 className="font-bold text-[3rem] pb-1 text-[#000638] font-[family-name:var(--font-merriweather-bold)]">
                 The Food Ninja Blog
             </h2>
             <p className="text-gray-500 text-[0.95rem]">A blog about food, experiences, and recipes</p>
