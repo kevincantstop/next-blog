@@ -9,7 +9,6 @@ import TableOfContent from "@/app/components/post/TableOfContent";
 import Recommend from "@/app/components/post/Recommend";
 import Author from "@/app/components/post/Author";
 import Code from "@/app/components/post/Code";
-
 import PrismLoader from "@/app/components/post/PrismLoader";
 
 const Post = () => {
