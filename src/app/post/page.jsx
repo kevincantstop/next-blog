@@ -8,6 +8,9 @@ import Except from "@/app/components/post/Except";
 import TableOfContent from "@/app/components/post/TableOfContent";
 import Recommend from "@/app/components/post/Recommend";
 import Author from "@/app/components/post/Author";
+import Code from "@/app/components/post/Code";
+
+import PrismLoader from "@/app/components/post/PrismLoader";
 
 const Post = () => {
     return (
@@ -64,35 +67,50 @@ const Post = () => {
                             Neque,
                             et ultrices duis fermentum, tincidunt sem sed. Erat accumsan dui enim nisl morbi feugiat.
                         </p>
-                        <p className="pt-3">
-                            Ac eget lorem sit nulla sed fusce etiam. Elementum nibh in eu sed. Nibh non semper amet sit
-                            hac tristique orci.
-                            Quis velit vitae amet magnis nec in nunc. Amet vitae id cras nibh. Sed ipsum, lacinia in sit
-                            vitae.
-                            Duis luctus convallis risus purus sollicitudin purus id eu.
-                            Faucibus mattis eget ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.
-                        </p>
-                        <h4 className="font-[family-name:var(--font-merriweather-bold)] pt-3 text-xl">
-                            Why you don’t need more than 3 pieces of clothing
-                        </h4>
-                        <p className="pt-3">
-                            Massa, libero morbi morbi sed non sed. In et neque lectus ultricies leo eros.
-                            Auctor in elementum accumsan malesuada gravida neque cursus pellentesque nunc.
-                            Dui nullam odio neque varius massa praesent. Neque, porta vel, morbi nulla at tincidunt.
-                            Neque,
-                            et ultrices duis fermentum, tincidunt sem sed. Erat accumsan dui enim nisl morbi feugiat.
-                        </p>
-                        <p className="pt-3">
-                            Ac eget lorem sit nulla sed fusce etiam. Elementum nibh in eu sed. Nibh non semper amet sit
-                            hac tristique orci.
-                            Quis velit vitae amet magnis nec in nunc. Amet vitae id cras nibh. Sed ipsum, lacinia in sit
-                            vitae.
-                            Duis luctus convallis risus purus sollicitudin purus id eu.
-                            Faucibus mattis eget ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.
-                        </p>
+                        <Code code={`
+import React, { isValidElement } from 'react'
+                        
+const hasChildren = element => isValidElement(element) && 
+    Boolean(element.props.children)
+
+const ReactChildrenText = children => {
+  if (hasChildren(children)) return ReactChildrenText(children.props.children)
+  return children
+}`} lang="javascript"/>
+                            <p className="pt-3">
+                                Ac eget lorem sit nulla sed fusce etiam. Elementum nibh in eu sed. Nibh non semper amet
+                                sit
+                                hac tristique orci.
+                                Quis velit vitae amet magnis nec in nunc. Amet vitae id cras nibh. Sed ipsum, lacinia in
+                                sit
+                                vitae.
+                                Duis luctus convallis risus purus sollicitudin purus id eu.
+                                Faucibus mattis eget ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.
+                            </p>
+                            <h4 className="font-[family-name:var(--font-merriweather-bold)] pt-3 text-xl">
+                                Why you don’t need more than 3 pieces of clothing
+                            </h4>
+                            <p className="pt-3">
+                                Massa, libero morbi morbi sed non sed. In et neque lectus ultricies leo eros.
+                                Auctor in elementum accumsan malesuada gravida neque cursus pellentesque nunc.
+                                Dui nullam odio neque varius massa praesent. Neque, porta vel, morbi nulla at tincidunt.
+                                Neque,
+                                et ultrices duis fermentum, tincidunt sem sed. Erat accumsan dui enim nisl morbi
+                                feugiat.
+                            </p>
+                            <p className="pt-3">
+                                Ac eget lorem sit nulla sed fusce etiam. Elementum nibh in eu sed. Nibh non semper amet
+                                sit
+                                hac tristique orci.
+                                Quis velit vitae amet magnis nec in nunc. Amet vitae id cras nibh. Sed ipsum, lacinia in
+                                sit
+                                vitae.
+                                Duis luctus convallis risus purus sollicitudin purus id eu.
+                                Faucibus mattis eget ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.
+                            </p>
                     </article>
-                    <Recommend />
-                    <Author />
+                    <Recommend/>
+                    <Author/>
                 </div>
                 <section className="flex flex-wrap justify-between mt-[8rem]">
                     <div className="w-[30%]">
@@ -107,6 +125,7 @@ const Post = () => {
                 </section>
             </main>
             <Footer/>
+            <PrismLoader />
         </Container>
     )
 }
