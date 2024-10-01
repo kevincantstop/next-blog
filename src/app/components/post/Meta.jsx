@@ -6,7 +6,7 @@ const Meta = () => {
             <p className="mb-4">
                 <a href="#" className={`inline-block px-3 text-gray-100 py-1 rounded bg-sky-950 text-[0.8rem] font-bold hover:bg-sky-900`}>Travel</a>
             </p>
-            <h1 className="text-[#000638] font-[family-name:var(--font-merriweather-bold)] text-4xl leading-[3rem]">
+            <h1 className="text-[#000638] font-[family-name:var(--font-merriweather-bold)] text-4xl leading-[3rem] cursor-pointer">
                 What I Learned About Life and Food Backpacking Around Greece
             </h1>
             <p className="font-[family-name:var(--font-merriweather-bold)] text-gray-500 mt-2 text-sm">

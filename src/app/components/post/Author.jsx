@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Author = () => {
     return (
-        <section className="flex bg-gray-100 p-[2rem] rounded gap-6 shadow-md">
+        <section className="flex bg-gray-100 p-[2rem] rounded gap-6 drop-shadow-lg">
             <a href="#" className="w-1/3 relative top-4">
                 <Image src="/images/avatar.jpeg" alt="Avatar" width="140" height="42" className="rounded-full hover:drop-shadow-xl transition-shadow" />
             </a>
