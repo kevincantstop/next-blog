@@ -6,6 +6,7 @@ import Subscribe from "@/app/components/Subscribe";
 import Meta from "@/app/components/post/Meta";
 import Except from "@/app/components/post/Except";
 import TableOfContent from "@/app/components/post/TableOfContent";
+import Recommend from "@/app/components/post/Recommend";
 
 const Post = () => {
     return (
@@ -89,6 +90,7 @@ const Post = () => {
                             Faucibus mattis eget ullamcorper eu suspendisse elit elit lacus purus. Tortor felis.
                         </p>
                     </article>
+                    <Recommend />
                 </div>
                 <section className="flex flex-wrap justify-between mt-[3rem]">
                     <div className="w-[30%]">
