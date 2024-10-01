@@ -1,6 +1,6 @@
 const Except = ({ children }) => {
     return (
-        <section className="font-bold text-xl my-6 text-gray-600">
+        <section className="font-bold text-lg text-gray-900">
             {children}
         </section>
     )

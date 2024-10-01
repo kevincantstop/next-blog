@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Meta = () => {
     return (
-        <section className="mt-8">
+        <section className="my-8">
             <p className="mb-4">
                 <a href="#" className={`inline-block px-3 text-gray-100 py-1 rounded bg-sky-950 text-[0.8rem] font-bold hover:bg-sky-900`}>Travel</a>
             </p>

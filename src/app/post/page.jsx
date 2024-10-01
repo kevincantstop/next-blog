@@ -13,7 +13,7 @@ const Post = () => {
     return (
         <Container>
             <Header />
-            <main className="px-[6rem] mb-10">
+            <main className="px-[6rem] mb-10 mt-[6rem]">
                 <div className="px-[10rem]">
                     <Meta />
                     <Except>
