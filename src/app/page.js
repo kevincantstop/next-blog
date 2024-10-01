@@ -4,6 +4,8 @@ import Container from "@/app/components/Container";
 import Card from "@/app/components/Card";
 import Pagination from "@/app/components/Pagination";
 import Footer from "@/app/components/Footer";
+import Posts from "@/app/components/Posts";
+import Subscribe from "@/app/components/Subscribe";
 
 export default function Home() {
     const count = n => Array(n).fill(0).map(((n, i) => n + i));
@@ -22,6 +24,17 @@ export default function Home() {
                     <div className="pb-[3rem] pt-[3rem]">
                         <Pagination/>
                     </div>
+                    <section className="flex flex-wrap justify-between mt-[3rem]">
+                        <div className="w-[30%]">
+                            <Subscribe />
+                        </div>
+                        <div className="w-[30%]">
+                            <Posts title="Recent Posts"/>
+                        </div>
+                        <div className="w-[30%]">
+                            <Posts title="Popular Posts"/>
+                        </div>
+                    </section>
                 </main>
                 <Footer/>
             </Container>
