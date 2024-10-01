@@ -6,19 +6,9 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-const brodies = localFont({
-  src: "./fonts/brodies.ttf",
-  variable: "--font-brodies",
-  weight: "100 900",
-});
-const mermaid1001 = localFont({
-  src: "./fonts/Mermaid1001.ttf",
-  variable: "--font-mermaid1001",
+const merriweather = localFont({
+  src: "./fonts/Merriweather.ttf",
+  variable: "--font-merriweather",
   weight: "100 900",
 });
 
@@ -30,7 +20,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-[#E5E5E5] ${geistSans.variable} ${geistMono.variable} ${brodies.variable} ${mermaid1001.variable} antialiased`}>
+      <body className={`bg-[#E5E5E5] ${geistSans.variable} ${merriweather.variable} antialiased`}>
         {children}
       </body>
     </html>
